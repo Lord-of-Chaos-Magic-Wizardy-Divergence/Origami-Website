@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation (Doesn't work)-->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#moreTutorials" class="w3-button w3-bar-item">More Tutorials</a>
+  <a href="#FAQ" class="w3-button w3-bar-item">FAQ</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact Us</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <CENTER><img class="mySlides" src="images/drago.jpg"
+  style="width:600px" style="height:600px"></CENTER>
+  <CENTER><img class="mySlides" src="images/snake.JPG"
+  style="width:600px" style="height:600px"></CENTER>
+  <CENTER><img class="mySlides" src="images/unicorn.jpg"
+  style="width:600px" style="height:600px"></CENTER>
+</section>
+
+<!-- Website Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">Fold is Gold</h2>
+  <p class="w3-opacity"><i>Keep Folding</i></p>
+  <p class="w3-justify">We make free Origami Tutorials for everyone to learn Origami and create things of their own interest with paper. We believe that anyone can learn Origami, and create new designs of different Origami objects.</p>
+</section>
+
+<!-- Origami Tutorials -->
+<section class="w3-row-padding w3-center w3-light-grey">
+<h3><CENTER><u><b>Origami Tutorials</b></u></CENTER></h3>
+
+  <article class="w3-third">
+    <p><u>Camel</u></p>
+    <a href="http://origami.me/camel/"><img src="images/camel.png" style="width:25%"></a>
+    <p>Click the Camel to open its Origami Tutorial.</p>
+  </article>
+  <article class="w3-third">
+    <p><u>Chameleon</u></p>
+    <a href="http://origami.me/chameleon/"><img src="images/chameleon.png" style="width:25%"></a>
+    <p>Click the Chameleon to open its Origami Tutorial.</p>
+  </article>
+  <article class="w3-third">
+    <p><u>Cicada</u></p>
+    <a href="http://origami.me/flying-cicada/"><img src="images/cicada.png" style="width:25%"></a>
+    <p>Click the Cicada to open its Origami Tutorial.</p>
+  </article>
+  <article class="w3-third">
+    <p><u>Teddy Bear</u></p>
+    <a href="http://origami.me/teddy-bear/"><img src="images/teddy.png" style="width:25%"></a>
+    <p>Click the Teddy Bear to open its Origami Tutorial.</p>
+  </article>
+  <article class="w3-third">
+    <p><u>Pigeon</u></p>
+    <a href="http://origami.me/pigeon/"><img src="images/pigeon.png" style="width:25%"></a>
+    <p>Click the Pigeon to open its Origami Tutorial.</p>
+  </article>
+  <article class="w3-third">
+    <p><u>Panda</u></p>
+    <a href="http://origami.me/panda/"><img src="images/panda.png" style="width:25%"></a>
+    <p>Click the Panda to open its Origami Tutorial.</p>
+  </article>
+</section>
+
+<!-- Footer - Icons lead back to homepage -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<script>
+//Javascript Code for Slideshow
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
