@@ -1,5 +1,5 @@
 # Origami-Website
-An Origami Website made using HTML/CSS
+An Origami Website made by me using HTML/CSS
 
 Preview link - https://lord-of-chaos-magic-wizardy-divergence.github.io/Origami-Website/
 
